@@ -23,3 +23,8 @@ There are also mechanisms in place that allow for creating features with more nu
 In addition to simply copying files, dotflex supports appending files to files, and the running of arbitrary shell strings or executables.
 
 Documentation is VERY incomplete, and the API is most certainly not stable at this point, so details on that coming later (the mechanisms are in there and are functional--you can check out `src/dotflex/operations.rs` if you're curious--but compared to the file copying mechanisms, the features aren't fully complete yet).
+
+### Environmental variables
+
+- `DOTFLEX_CONFIG_PATH`, defaults to `$HOME/.dotflex`
+- `DOTFLEX_TARGET_PATH`, defaults to `$HOME`
