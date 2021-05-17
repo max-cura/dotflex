@@ -1,0 +1,12 @@
+[package]
+name = "dotflex"
+version = "0.1.1"
+edition = "2018"
+
+[dependencies]
+    dirs-next = "2.0.0"
+    toml = "0.5"
+# we need ArgMatches::grouped_values_of which is 3.0.0-rc.0, which isn't available through crates.io yet
+    clap = { git = "https://github.com/clap-rs/clap/" }
+    serde = { version = "1.0", features = ["derive"] }
+    serde_yaml = "0.8"
